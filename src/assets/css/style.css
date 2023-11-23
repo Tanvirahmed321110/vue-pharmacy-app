@@ -1,0 +1,84 @@
+/* Google Font */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
+ /* Global Css In This Project */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*  variable in css */
+    :root{
+        --primary-color:rgb(34, 30, 30);
+        --second-color:blueviolet;
+        --sucess-color:rgb(12, 80, 12);
+        
+    }
+
+button{
+    border: none;
+    background-color:var(--primary-color);
+    color: white;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    transition: all .3s linear;
+}
+button:hover{
+    background-color: var(--second-color);
+    font-size: 16px !important;
+}
+button:active{
+    background-color: var(--sucess-color);
+}
+
+input{
+    border: 1px solid rgb(216, 215, 212);
+    outline: none;
+    padding: 9px 10px;
+    border-radius: 4px;
+    transition:  all .4s linear;
+}
+input:focus{
+    border: 1px solid brown;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mt-4{
+    margin-top: 15px;
+}
+.text-center{
+    text-align: center;
+}
+.m-auto{
+    margin: 0 auto;
+}
+img{
+    width: 10%;
+    border-radius: 6px;
+}
+
+label{
+    display: block;
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 3px;
+}
+
+#notification{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    margin: 19px;
+}
+
+/*===== Global Css In This Project =====*/
