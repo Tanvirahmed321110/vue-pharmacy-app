@@ -80,5 +80,23 @@ label{
     z-index: 9999;
     margin: 19px;
 }
-
+.w-100{
+    width: 100%;
+    display: block;
+}
+.p-4{
+    padding: 8px;
+}
 /*===== Global Css In This Project =====*/
+
+
+
+.ani-enter-active,
+.ani-leave-active{
+    transition: all .4s linear;
+}
+
+.ani-enter-from,
+.ani-leave-to{
+    opacity: 0;
+}

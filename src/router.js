@@ -14,6 +14,7 @@ const routes = [
     {
         path : '/dashboard' ,  
         component : comDashboard,
+        redirect:'/dashboard/overview',
         children:[
             {path:'/dashboard/overview', component: childOverview},
             {path: '/dashboard/drugs', component: childDrugs},

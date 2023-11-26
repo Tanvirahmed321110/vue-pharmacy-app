@@ -5,12 +5,12 @@
         </div>
         <div class="sidebar-bottom">
             <div class="sidebar-nav">
-                <router-link to="/dashboard/overview">Overview</router-link>
-                <router-link to="/dashboard/drugs">Drugs</router-link>
-                <router-link to="/dashboard/vendors">Vendors</router-link>
-                <router-link to="/dashboard/selling">Selling History</router-link>
-                <router-link to="/dashboard/other">Other</router-link>
-                <router-link to="/dashboard/setting">Setting</router-link>
+                <router-link active-class="active" to="/dashboard/overview">Overview</router-link>
+                <router-link active-class="active" to="/dashboard/drugs">Drugs</router-link>
+                <router-link active-class="active" to="/dashboard/vendors">Vendors</router-link>
+                <router-link active-class="active" to="/dashboard/selling">Selling History</router-link>
+                <router-link active-class="active" to="/dashboard/other">Other</router-link>
+                <router-link active-class="active" to="/dashboard/setting">Setting</router-link>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
         margin-top: 60px;
         /* padding: 20px; */
     }
-    .sidebar-nav a,.sidebar-nav router-link{
+    .sidebar-nav a{
         display: block;
         margin: 7px 0;
         text-decoration: none;
@@ -51,11 +51,17 @@
         transition: all .1s linear;
         padding-left: 18px;
     }
-    
-    
-    
-    .sidebar-nav a:hover{
+
+    .sidebar-nav a:hover {
         background-color: #533737;
         border-left: 4px solid red;
     }
+
+  .sidebar-nav a.active {
+    transition: all .2s linear;
+    background-color: blue;
+    color: white;
+    border-left: 18px solid red;
+  }
+
 </style>
